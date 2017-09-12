@@ -23,7 +23,6 @@ public class IntroMain
 			
 			// instance method call
 			conventionsInstance.doStuff(); 
-		}
-		
+		}	
 	}
 }
