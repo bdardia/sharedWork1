@@ -9,14 +9,18 @@ public class CodingConventions
 	
 	// constructor, so the return type is an instance of the class
 	// a constructor must always be named after the class
-	public CodingConventions()
+	public CodingConventions(String name, int descriptionIndex)
 	{
-		name = "Benjamin";
-		description = "student";
+		// distinguish between parameters and other variables by using "this"
+		
+		this.name = name;
+		description = " is a " + IntroMain.DESCRIPTIONS[descriptionIndex];
 	}
 	public void doStuff()
 	{
+		String output = name + description;
+		
 		// static method call
-		System.out.println("123");
+		System.out.println(output);
 	}
 }

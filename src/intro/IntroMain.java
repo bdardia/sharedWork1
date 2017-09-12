@@ -3,12 +3,14 @@ package intro;
 
 public class IntroMain 
 {
+	public static final String[] DESCRIPTIONS = {"student", "teacher"};
+	
 	public static void main(String[] args)
 	{
 		// declaration of an instance of CodingConventions
 		// also being instantiated
 		// always use new when calling constructors
-		CodingConventions conventionsInstance = new CodingConventions();
+		CodingConventions conventionsInstance = new CodingConventions("Benjamin", 0);
 		
 		// local variables are not fields
 		// they are variables that are only used in the scope of a method
