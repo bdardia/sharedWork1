@@ -22,7 +22,7 @@ public class IntroMain
 			// after the method they are destroyed
 			
 			// instance method call
-			conventionsInstance.doStuff();
+			conventionsInstance.doStuff(); 
 		}
 		
 	}
