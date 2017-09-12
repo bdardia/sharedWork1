@@ -10,13 +10,20 @@ public class IntroMain
 		// declaration of an instance of CodingConventions
 		// also being instantiated
 		// always use new when calling constructors
-		CodingConventions conventionsInstance = new CodingConventions("Benjamin", 0);
 		
-		// local variables are not fields
-		// they are variables that are only used in the scope of a method
-		// after the method they are destroyed
+		int numberOfPeople = 10;
 		
-		// instance method call
-		conventionsInstance.doStuff();
+		for(int i = 0; i < numberOfPeople; i += 1)
+		{
+			CodingConventions conventionsInstance = new CodingConventions("Benjamin", i%2);
+			
+			// local variables are not fields
+			// they are variables that are only used in the scope of a method
+			// after the method they are destroyed
+			
+			// instance method call
+			conventionsInstance.doStuff();
+		}
+		
 	}
 }
