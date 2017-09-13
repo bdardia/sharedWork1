@@ -16,7 +16,7 @@ public class IntroMain
 		
 		for(int i = 0; i < numberOfPeople; i += 1)
 		{
-			CodingConventions conventionsInstance = new CodingConventions(NAMES, i%2);
+			CodingConventions conventionsInstance = new CodingConventions(NAMES, i%2, i%10);
 			
 			// local variables are not fields
 			// they are variables that are only used in the scope of a method

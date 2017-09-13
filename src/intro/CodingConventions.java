@@ -9,12 +9,12 @@ public class CodingConventions
 	
 	// constructor, so the return type is an instance of the class
 	// a constructor must always be named after the class
-	public CodingConventions(String[] name, int descriptionIndex)
+	public CodingConventions(String[] name, int descriptionIndex, int nameIndex)
 	{
 		// distinguish between parameters and other variables by using "this"
 		for (int i = 0; i < name.length; i += 1)
 		{
-			this.name[i] = name[i];	
+			this.name = name.clone();
 		}
 		description = " is a " + IntroMain.DESCRIPTIONS[descriptionIndex];
 	}
