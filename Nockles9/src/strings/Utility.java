@@ -3,7 +3,9 @@
 */
 package strings;
 
-public clastt Utility{
+import java.util.Scanner;
+
+public class Utility{
 
   private static Scanner inputSource = new Scanner(System.in);
   
