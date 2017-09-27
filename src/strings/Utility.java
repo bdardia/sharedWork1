@@ -22,8 +22,30 @@ public class Utility{
     
   }
   // test
-  public static boolean keywordIsIsolated(int psn, String keyword, String s){
-    return true;
+  public static boolean keywordIsIsolated(int psn, String keyword, String s)
+  {
+	  try
+	  {
+		  return (s.substring(psn - 1, psn).equals(" ") && s.substring(psn + keyword.length(), psn + keyword.length() + 1).equals(" "));
+	  }
+	  catch(Exception e)
+	  {
+		  try
+		  {
+			  return (s.substring(psn + keyword.length(), psn + keyword.length() + 1).equals(" "));
+		  }
+		  catch(Exception e1)
+		  {
+			try
+			{
+				return (s.substring(psn - 1, psn).equals(" "));
+			}
+			catch(Exception e2)
+			{
+				return true;
+			}
+		  }
+	  }
   }
   
   public static boolean noNegations(String s, int psn){
