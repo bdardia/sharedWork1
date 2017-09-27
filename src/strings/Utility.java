@@ -19,7 +19,6 @@ public class Utility{
     if(!noNegations("I am not great, but I am okay", 9) && noNegations("I am not great, but I am okay", 25) && noNegations("okay", 0)){
       print("You passed all the noNegations tests.");
     }
-    
   }
   public static boolean keywordIsIsolated(int psn, String keyword, String s)
   {
@@ -53,9 +52,9 @@ public class Utility{
 	  }
 	  
 	  if(s.substring(psn-4, psn).equals("not ")) {
-		  return true;
+		  return false;
 	  }
-	  return false;
+	  return true;
   }
   
   
