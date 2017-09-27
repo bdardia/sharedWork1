@@ -48,7 +48,14 @@ public class Utility{
   }
   
   public static boolean noNegations(String s, int psn){
-	  return true;
+	  if(psn <= 3) {
+		  return true;
+	  }
+	  
+	  if(s.substring(psn-4, psn).equals("not ")) {
+		  return true;
+	  }
+	  return false;
   }
   
   
