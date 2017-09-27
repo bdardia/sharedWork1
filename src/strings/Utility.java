@@ -27,6 +27,12 @@ public class Utility{
   }
   
   public static boolean noNegations(String s, int psn){
+	  //precondition keyword and s are lowercase 
+	  //keyword is found at position psn
+	  //returns true if keyword is not a part of a larger word
+	  // (4,"good", "im good") -> true
+	  
+	  
     return true;
   }
   
